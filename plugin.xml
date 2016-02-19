@@ -7,7 +7,7 @@
     <keywords>cordova,wit.ai,witai,speech control,voice recognition, natural language processing</keywords>
     <repo>https://github.com/bfla/cordova-witai</repo>
     
-    <js-module src="www/witai-interface.js" name="witai">
+    <js-module src="www/witai.js" name="witai">
         <clobbers target="device" />
     </js-module>
     
