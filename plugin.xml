@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-witai-interface" version="0.2.3">
+    <name>Witai Interface</name>
+    <description>Cordova Wit.ai Interface</description>
+    <license>MIT</license>
+    <keywords>cordova,wit.ai,witai,speech control,voice recognition, natural language processing</keywords>
+    <repo>https://github.com/bfla/cordova-witai</repo>
+    
+    <js-module src="www/witai-interface.js" name="witai">
+        <clobbers target="device" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Witai">
+                <param name="ios-package" value="CDVWitai"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVWitai.h" />
+        <source-file src="src/ios/CDVWitai.m" />
+        <!-- <framework src="CoreGraphics.framework" /> -->
+        <!-- <framework src="MobileCoreServices.framework" /> -->
+    </platform>
+</plugin>
