@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-witai-interface",
+  "version": "0.0.1",
+  "description": "Cordova Wit.ai Interface",
+  "cordova": {
+    "id": "cordova-plugin-witai-interface",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bfla/cordova-witai"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "witai",
+    "wit.ai",
+    "speech control",
+    "voice recognition",
+    "natural language processing"
+  ],
+  "author": "Brian Flaherty",
+  "license": "MIT"
+}
