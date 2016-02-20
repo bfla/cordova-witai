@@ -1,3 +1,7 @@
+// Examples:
+// https://github.com/apache/cordova-plugin-geolocation/blob/master/src/ios/CDVLocation.m
+// https://github.com/apache/cordova-plugin-media-capture/blob/master/src/ios/CDVCapture.m
+
 // - (void)init:(CDVInvokedUrlCommand*)command
 // {
 //     CDVPluginResult* pluginResult = nil;
@@ -11,7 +15,7 @@
 //     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 // }
 
-- (BOOL)initMicrophone:(CDVInvokedUrlCommand*)command
+- (void)initMicrophone:(CDVInvokedUrlCommand*)command
 {
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
@@ -21,7 +25,6 @@
     //enabling detectSpeechStop will automatically stop listening the microphone when the user stop talking
     [Wit sharedInstance].detectSpeechStop = WITVadConfigDetectSpeechStop;
 
-    return YES;
 }
 
 - (BOOL)render:(CDVInvokedUrlCommand*)command
