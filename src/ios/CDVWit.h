@@ -6,10 +6,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Wit/Wit.h>
 
-@interface CDVWitai : CDVPlugin {
+@interface CDVWit : CDVPlugin
 
-
-}
+@property(nonatomic, copy) NSString *callbackId;
 
 - (void)initMicrophone:(CDVInvokedUrlCommand*)command;
+- (void)handleWitResponse:(NSArray *)outcomes messageId:(NSString *)messageId customData:(id) customData error:(NSError*)e;
+
 @end

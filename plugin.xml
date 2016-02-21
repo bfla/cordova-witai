@@ -14,11 +14,11 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Witai">
-                <param name="ios-package" value="CDVWitai"/>
+                <param name="ios-package" value="CDVWit"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CDVWitai.h" />
-        <source-file src="src/ios/CDVWitai.m" />
+        <header-file src="src/ios/CDVWit.h" />
+        <source-file src="src/ios/CDVWit.m" />
         <framework src="AVFoundation.framework" />
         <framework src="MobileCoreServices.framework" />
         <framework src="SystemConfiguration.framework" />
