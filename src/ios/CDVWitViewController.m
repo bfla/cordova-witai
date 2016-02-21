@@ -1,3 +1,5 @@
+#import "CDVWit.h"
+#import "CDVWitStore.h"
 
 @implementation CDVWitViewController
 
@@ -36,7 +38,9 @@
     labelView.text = [NSString stringWithFormat:@"intent = %@", intent];
     
     [self.view addSubview:labelView];
-    // [CDVWit handleWitResponse:outcomes messageId:messageId customData:customData error:e];
+    // FIXIT - Wit responses should be sent back to the Cordova Plugin
+    // CDVWitStore* sharedStore = [CDVWitStore sharedStore];
+    // [sharedStore.wit handleWitResponse:outcomes messageId:messageId customData:customData error:e];
 }
 
 @end

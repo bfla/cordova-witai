@@ -1,8 +1,14 @@
 #import "CDVWit.h"
 
+@interface CDVWitStore ()
+
+@property (nonatomic, copy) CDVWit *privateWit;
+
+@end
+
 @implementation CDVWitStore
 
-+ (instancetype)sharedWit
++ (instancetype)sharedStore
 {
     static CDVWitStore *sharedStore = nil;
     
@@ -14,8 +20,8 @@
     return sharedStore;
 }
 
-// Configure initializers =============================================================
-// If the programmer calls regular old 'init' on BNRItemStore, let them know their mistake
+// Configure initializers =====================================================
+// If the programmer calls regular old 'init' on BNRItemStore, indicate mistake
 #pragma init
 - (instancetype)init
 {
@@ -31,15 +37,22 @@
 {
     self = [super init];
     if (self) {
-      _wit = nil;
+      _privateWit = nil;
     }
 }
 
 #pragma setWit
 -(void)setWit:(CDVWit *)wit
 {
-  if (!self.wit) {
-    self.wit = witInstance;
+  if (!self.privateWit) {
+    self.privateWit = wit;
   }
 }
+
+// Getters =====================================================================
+- (CDVWit *)wit
+{
+  return self.privateWit;
+}
+
 @end

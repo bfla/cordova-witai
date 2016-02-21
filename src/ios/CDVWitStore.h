@@ -3,9 +3,9 @@
 
 @interface CDVWitStore : NSObject
 
-@property(nonatomic, copy) CDVWit *wit;
+@property (nonatomic, copy) CDVWit *wit; // FIXIT - this might require some tweaking
 
-+ (instancetype)sharedWit;
++ (instancetype)sharedStore;
 - (void)setWit:(CDVWit *)wit;
 
 @end
