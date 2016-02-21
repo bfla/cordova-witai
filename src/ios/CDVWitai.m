@@ -23,13 +23,4 @@
 
     }
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
-}
-
-- (void)listenForWit:(CDVInvokedUrlCommand*)command
-{
-    CDVPluginResult.keepCallback = true; // Let callback fire multiple times
-
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
 }
