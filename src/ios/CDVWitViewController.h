@@ -1,5 +1,5 @@
 #include <Wit/Wit.h>
-#import <CDVWit.h>
+#import "CDVWit.h"
 
 @interface CDVWitViewController : UIViewController <WitDelegate>
 
