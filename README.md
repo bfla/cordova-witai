@@ -1,8 +1,5 @@
 ### Description
-A Cordova plugin which generates a Wit.ai UI on iOS.
-
-(Android would also be nice to have. If any Android devs out there want to do that,
-it would be much appreciated.)
+(Incomplete & on hold until further notice) A Cordova plugin which generates a Wit.ai UI on iOS.
 
 ### Usage
 Coming soon
